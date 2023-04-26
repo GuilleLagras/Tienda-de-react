@@ -1,0 +1,17 @@
+.logoImagen {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+}
+
+.contenedorCabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(89, 89, 89);
+}
+.contenedorCabecera i {
+color: black;
+margin-right: 2rem;
+}
