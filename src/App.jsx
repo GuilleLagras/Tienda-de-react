@@ -3,6 +3,7 @@ import Navbar from './components/NavBar';
 import Cards from './components/Cards';
 import Cabecera from './components/Cabecera';
 import ItemListContainer from './components/ItemListContainer';
+import Carrousel from './components/Carrousel'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Cabecera />
         <Navbar />
         <ItemListContainer texto='Bienvenido a Tienda Airsoft' className="tituloAirsoft" />
+        <Carrousel />
         <Cards  />
       </header>
     </div>

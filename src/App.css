@@ -5,3 +5,7 @@
 .marcadoras{
     height: 2rem;
 }
+
+.App-header{
+    background-color: rgb(115, 115, 115);
+}
