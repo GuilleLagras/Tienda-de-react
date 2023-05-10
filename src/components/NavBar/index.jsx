@@ -2,16 +2,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+
 function ColorSchemesExample() {
     return (
         <>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Que es Airsoft</Navbar.Brand>
+                    <Navbar.Brand href='/'>Que es Airsoft</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Equipos</Nav.Link>
-                        <Nav.Link href="#features">Galeria</Nav.Link>
-                        <Nav.Link href="#pricing">Contacto</Nav.Link>
+                        <Nav.Link href='/categoria/primarias'>Primarias</Nav.Link>
+                        <Nav.Link href='/categoria/secundarias'>Secundarias</Nav.Link>
+                        <Nav.Link href='/galeria'>Galeria</Nav.Link>
+                        <Nav.Link href='/cart'>Carrito</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

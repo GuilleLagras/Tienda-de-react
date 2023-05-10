@@ -1,0 +1,12 @@
+
+.marcadora{
+    display: block;
+    width: 300px;
+    
+}
+
+.marcadora img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
