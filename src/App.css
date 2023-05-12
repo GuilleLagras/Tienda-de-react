@@ -2,16 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing:  border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 .tituloAirsoft{
     text-align: center;
     margin: 2rem ;
+    
 }
 .marcadoras{
     height: 2rem;
 }
 
 .App-header{
-    background-color: rgb(115, 115, 115);
-}
+    background-image: linear-gradient(to left top, #212529, #2a2f33, #33383d, #3c4348, #464d53);}

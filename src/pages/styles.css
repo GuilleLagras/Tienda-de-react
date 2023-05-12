@@ -1,0 +1,17 @@
+.quees{
+    margin-top: 2rem;
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color:rgba(149, 149, 149, 0.911);
+    border-radius: 3rem;
+    box-shadow: .7rem .5rem 1rem -.1rem;
+
+}
+
+.separacionTextoInicio p,h3,ul{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color:rgba(240, 248, 255, 0.631);
+    padding: 3rem;
+}

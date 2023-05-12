@@ -6,8 +6,9 @@ import Carrousel from './components/Carrousel'
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter ,Routes, Route } from 'react-router-dom';
 import Cart from './components/Cart';
-import QueEsArisoft from './components/QueEsAirsoft';
-import Galeria from './components/Galeria';
+import Galeria from './pages/Galeria';
+import QueEsAirsoft from './pages/queEsAirsoft';
+import Footer from './components/Footer';
 
 
 
@@ -19,16 +20,16 @@ function App() {
         <BrowserRouter>
         <Cabecera />
         <Navbar />
+        <Carrousel />
         <Routes>
-        <Route path='/' element= { <QueEsArisoft /> } ></Route>
-          <Route path='/categoria/:categoriaId' element= { <ItemListContainer texto='Bienvenido a Tienda Airsoft' className="tituloAirsoft" /> } ></Route>
+        <Route path='/' element= { <QueEsAirsoft /> } ></Route>
+          <Route path='/categoria/:categoriaId' element= { <ItemListContainer texto='Estos son nuestros productos' className="tituloAirsoft" /> } ></Route>
           <Route path='/galeria' element= {<Galeria /> } ></Route>
-          <Route path='/detalle' element= {<ItemDetailContainer />  } ></Route>
+          <Route path='/detalle/:detalleId' element= {<ItemDetailContainer />  } ></Route>
           <Route path='/cart' element= {<Cart />  } ></Route>
         </Routes>
-        <Carrousel />
         </BrowserRouter>
-        
+        <Footer />
       </header>
     </div>
   );

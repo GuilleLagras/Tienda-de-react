@@ -1,0 +1,81 @@
+.containerFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(109, 109, 109, 0.46);
+    height: 350px;
+    padding: 2rem;
+}
+
+
+.logoFooter img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.tituloFooter,
+.copy,
+.logoFooter,
+.direccionFooter {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redesSociales i {
+    font-size: 2rem;
+    padding: 2rem;
+    transition: 1s;
+    color: rgb(179, 179, 179);
+}
+
+.copy {
+    font-size: 1.5rem;
+}
+
+
+
+.logoFooter {
+    max-width: 100%;
+}
+
+.direccionFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sectionFooter {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+#sectionFooter iframe {
+    transform: scale(0.8);
+}
+
+.redesSociales :hover {
+    color: #CE7D35;
+    cursor: pointer;
+}
+
+.logoFooter a {
+    transition: 1.5s;
+}
+
+.logoFooter a:hover {
+    transform: scale(1.1);
+}
+
+.direccionFooter h2 {
+    transition: 2s h2;
+}
+

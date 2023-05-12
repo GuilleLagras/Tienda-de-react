@@ -1,0 +1,15 @@
+#navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.divMenu{
+    display: flex;
+}
+
+.tituloAirsoft{
+    text-align: center;
+    color: aliceblue;
+    font-size: 10rem;
+}
