@@ -1,6 +1,6 @@
 import React ,{ useState, useEffect} from "react";
-import ItemDetail from "../ItemDetail";
 import { useParams } from "react-router-dom";
+import CardDetalle from "../Cards";
 
 
 const marcadoras = [
@@ -30,7 +30,10 @@ export const ItemDetailContainer = () => {
 },[])
 
     return (
-        <ItemDetail data ={data} />
+        <div>
+            <CardDetalle data ={data}/>
+
+        </div>
     );
 }
 

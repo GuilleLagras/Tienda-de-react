@@ -17,9 +17,15 @@ export const ItemDetail = ({data})=> {
             <div className="detail">
                 <img className="detailImage" src={data.image} alt="" />
                 <div className="content" >
-                    <h1>
+                    <h1 className='tituloDetail'>
                         {data.title}
                     </h1>
+                    <h2 className='h2Detail'>
+                        {data.precio}
+                    </h2>
+                    <h2>
+                        {data.detalle}
+                    </h2>
                     {
                         goToCart
                         ?<Link to='/cart' >Terminar compra</Link>

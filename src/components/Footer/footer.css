@@ -22,6 +22,7 @@
     display: flex;
     justify-content: center;
     padding: 2rem;
+    font-size: 1.3rem;
 }
 
 .redesSociales {
@@ -37,7 +38,7 @@
 }
 
 .copy {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 
@@ -50,6 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: .9rem;
 }
 
 #sectionFooter {
@@ -58,9 +60,6 @@
     margin: 2rem;
 }
 
-#sectionFooter iframe {
-    transform: scale(0.8);
-}
 
 .redesSociales :hover {
     color: #CE7D35;

@@ -1,6 +1,6 @@
 .quees{
     margin-top: 2rem;
-    font-size: 5rem;
+    font-size: 2rem;
     color: rgb(0, 0, 0);
     text-align: center;
     background-color:rgba(149, 149, 149, 0.911);
@@ -11,7 +11,7 @@
 
 .separacionTextoInicio p,h3,ul{
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color:rgba(240, 248, 255, 0.631);
-    padding: 3rem;
+    padding: 5rem;
 }

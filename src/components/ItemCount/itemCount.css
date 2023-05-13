@@ -1,14 +1,15 @@
 .counter{
     width: fit-content;
-    background-color: rgb(69, 69, 69);
     margin: 2rem auto ;
     padding: 2rem;
     text-align: center;
+    border: solid 2px ;
     border-radius: 3rem;
+    
 }
 .numeroCarrito{
     margin: 0 1rem;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
 }
 .botonContador{
@@ -19,7 +20,12 @@
 }
 .botonCarrito{
     margin-top: .6rem;
-    border-radius: 1rem;
-    background-color: rgba(255, 225, 58, 0.866);
+    background-color: rgba(112, 0, 140, 0.866);
     border: none;
+    padding: 5px;
+}
+
+.detailImage{
+    width: 300px;
+    height: 150px;
 }
