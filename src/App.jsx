@@ -9,6 +9,7 @@ import Cart from './components/Cart';
 import Galeria from './pages/Galeria';
 import QueEsAirsoft from './pages/queEsAirsoft';
 import Footer from './components/Footer';
+import Formulario from './pages/Formulario';
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/galeria' element= {<Galeria /> } ></Route>
           <Route path='/detalle/:detalleId' element= {<ItemDetailContainer />  } ></Route>
           <Route path='/cart' element= {<Cart />  } ></Route>
+          <Route path='/contacto' element= {<Formulario />  } ></Route>
         </Routes>
         </BrowserRouter>
         <Footer />

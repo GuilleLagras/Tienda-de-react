@@ -19,6 +19,9 @@ function ColorSchemesExample() {
                         <div>
                         <Nav.Link href='/cart'>Carrito</Nav.Link>
                         </div>
+                        <div>
+                        <Nav.Link href='/contacto'>Contacto</Nav.Link>
+                        </div>
                     </Nav>
                 </Container>
             </Navbar>
