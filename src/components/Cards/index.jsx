@@ -13,6 +13,7 @@ function CardDetalle({data}) {
     }
 
     return (
+    
         <Card className='cardDetalle' style={{ width: '18rem' }}>
             <Card.Img variant="top" src={data.image} />
             <Card.Body>
@@ -23,7 +24,7 @@ function CardDetalle({data}) {
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-                <ListGroup.Item>{data.precio}</ListGroup.Item>
+                <ListGroup.Item>${data.price}</ListGroup.Item>
                 <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
             </ListGroup>

@@ -1,9 +1,11 @@
 import React from "react";
 import './styles.css';
+import Carrousel from '../components/Carrousel'
 
 export const QueEsAirsoft = () => {
-    return (
-        
+    return (          
+    <div>
+        <Carrousel />
         <div className="separacionTextoInicio">
             <h1 className="quees">¿Que es  Airsoft?</h1>
 
@@ -63,6 +65,7 @@ export const QueEsAirsoft = () => {
             </div>
         </div>
         </div>
+    </div>
     ) ;
 }
 
