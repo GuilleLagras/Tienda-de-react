@@ -10,7 +10,8 @@ const Item = ({ info }) => {
                 <img src={info.image} alt="" />
                 <div>
                     <p className='textoCard' >{info.title} </p>
-                    <p className='textoCard'>{info.precio} </p>
+                    <p className='textoCard'>{info.price} </p>
+                    <button>Agregar al carrito</button>
                 </div>
             </Link>
         </div>

@@ -1,7 +1,8 @@
 import './itemCount.css';
 import React, { useState } from 'react';
- import CartWidget
-  from '../CartWidget';
+import CartWidget from '../CartWidget';
+
+
 export const ItemCount = ({ initial, stock, onAdd }) => {
     const [count, setCount] = useState(initial);
 
@@ -19,7 +20,7 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
             <span className='numeroCarrito'>{count} </span>
             <button disabled={count >= stock} className='botonContador' onClick={increase}>➕</button>
             <div>
-                <button disabled={stock <= 0} onClick={() => onAdd(count)} className='botonCarrito' ><CartWidget /> Agregar</button>
+                <button disabled={stock <= 0} onClick={() => onAdd(count)} className='botonCarrito' ><CartWidget /> </button>
             </div>
         </div>
     );

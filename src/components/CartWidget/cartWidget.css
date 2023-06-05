@@ -1,0 +1,9 @@
+.iconoCarrito{
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    padding:1px 8px;
+    transition: .5s;
+}
+.iconoCarrito:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+}
