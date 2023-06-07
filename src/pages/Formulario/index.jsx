@@ -20,19 +20,19 @@ const Formulario = () => {
             <form className='formularioContainer' action="" onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <input type="text"  placeholder="Ingrese su nombre" className="labelForm" {...register('nombre', { required: true })} />
-                    {errors.nombre?.type === 'required' && <p>El campo nombre es quererido</p>}
+                    {errors.nombre?.type === 'required' && <p>El campo nombre es requerido</p>}
                 </div>
                 <div>
                     <input type="text" placeholder="Ingrese su Apellido" className="labelForm"{...register('apellido', { required: true })} />
-                    {errors.apellido?.type === 'required' && <p>El campo apellido es quererido</p>}
+                    {errors.apellido?.type === 'required' && <p>El campo apellido es requerido</p>}
                 </div>
                 <div>
                     <input type="text" placeholder="Ingrese su Direccion" className="labelForm" {...register('direccion', { required: true })} />
-                    {errors.direccion?.type === 'required' && <p>El campo direccion es quererido</p>}
+                    {errors.direccion?.type === 'required' && <p>El campo direccion es requerido</p>}
                 </div>
                 <div>
                     <input type="text" placeholder="Ingrese su edad" className="labelForm" {...register('edad', { required: true })} />
-                    {errors.edad?.type === 'required' && <p>El campo Edad es quererido</p>}
+                    {errors.edad?.type === 'required' && <p>El campo Edad es requerido</p>}
                 </div>
                 <div>
                     <label className="formTelefono">Incluir telefono?</label>

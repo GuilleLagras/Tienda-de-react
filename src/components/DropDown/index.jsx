@@ -1,16 +1,16 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 
-function DropDown() {
+const DropDown = () => {
     return (
         <Dropdown>
             <Dropdown.Toggle variant="dark" id="dropdown-basic">
                 Marcadoras
             </Dropdown.Toggle>
 
-            <Dropdown.Menu variant="dark">
-                <Dropdown.Item href='/categoria/primarias'>Armas Primarias</Dropdown.Item>
-                <Dropdown.Item href='/categoria/secundarias'>Armas Secundarias</Dropdown.Item>
-            </Dropdown.Menu>
+            <ul className="dropdown-menu" variant="dark">
+                <li className="dropdown-item"  to='/categoria/primarias'>Armas Primarias</li>
+                <li className="dropdown-item" to='/categoria/secundarias'>Armas Secundarias</li>
+            </ul>
         </Dropdown>
     );
 }
