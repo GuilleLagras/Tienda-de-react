@@ -30,7 +30,6 @@ function CardDetalle({data}) {
             </ListGroup>
             <Card.Body>
                 <Card.Link href='/cart'>Ver el carrito</Card.Link>
-                <Card.Link href="/cart">{}</Card.Link>
                 {
                         goToCart
                         ?<Link to='/cart' >Terminar compra</Link>

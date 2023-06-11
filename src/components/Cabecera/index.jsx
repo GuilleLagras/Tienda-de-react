@@ -8,7 +8,7 @@ export const Cabecera = () => {
     return (
         <div className="contenedorCabecera">
             <Link to="/"><img className="logoImagen" src="/img/logo/miraapng.png" alt="logo" /></Link>
-            <Button variant="dark"  >Iniciar sesion</Button>
+            <Link to="/contacto"><Button variant="dark"  >Login/Logout</Button></Link>
         </div>
     );
 }

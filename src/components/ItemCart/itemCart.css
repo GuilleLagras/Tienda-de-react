@@ -9,3 +9,12 @@
     width: 200px;
     margin-right: 1rem;
 }
+
+.botonEliminar{
+    background-color: rgb(202, 47, 47);
+    margin: 0 auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    
+}

@@ -11,9 +11,7 @@ import Footer from './components/Footer';
 import Formulario from './pages/Formulario';
 import React from 'react';
 import CartProvider from './context/CartContext';
-
-
-
+import Login from './components/Login';
 
 function App() {
   return (
@@ -29,7 +27,7 @@ function App() {
               <Route path='/galeria' element={<Galeria />} ></Route>
               <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} ></Route>
               <Route path='/cart' element={<Cart />} ></Route>
-              <Route path='/contacto' element={<Formulario />} ></Route>
+              <Route path='/contacto' element={<Login />} ></Route>
             </Routes>
           </CartProvider>
         </BrowserRouter>

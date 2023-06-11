@@ -1,0 +1,15 @@
+.botonLog{
+    background-color: rgb(178, 178, 178);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+    box-shadow: .7rem .5rem 1rem -.1rem;
+    transition: 1s;
+}
+
+.botonLog:hover{
+    transform: scale(1.04);
+    max-width: 100%;
+    cursor: pointer;
+}

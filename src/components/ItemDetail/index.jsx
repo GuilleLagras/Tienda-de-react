@@ -1,10 +1,13 @@
 import './itemDetail.css';
 import ItemCount from '../ItemCount';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from '../../context/CartContext';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import FormCompra from '../FormCompra';
+
+
 
 export const ItemDetail = ({ data }) => {
     const [goToCart, setGoToCart] = useState(false);
@@ -15,6 +18,17 @@ export const ItemDetail = ({ data }) => {
         setGoToCart(true);
         addProduct(data, quantity);
     }
+
+    const [datosDelComprador, setDatosDelComprador] = useState([]);
+    const datosCompra = (dataComprador) => {
+        setDatosDelComprador(prevState => [...prevState, dataComprador]);
+    };
+
+    useEffect(() => {
+        localStorage.setItem("datosDelComprador", JSON.stringify(datosDelComprador))
+    }, [datosDelComprador])
+
+
 
     return (
 
@@ -29,18 +43,14 @@ export const ItemDetail = ({ data }) => {
             </Card.Body>
             <ListGroup className="list-group-flush">
                 <ListGroup.Item>${data.price}</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                <ListGroup.Item><img className="imgTarjetas" src="/img/tarjetas.jpg" alt="logo" /></ListGroup.Item>
+                <ListGroup.Item><FormCompra onSubmit={datosCompra}  /></ListGroup.Item>
             </ListGroup>
             <Card.Body >
                 <div className='botonesVerCarrito'>
-                    <Link to='/cart'>Ver el carrito</Link>
-                    <Link to="/cart">{ }</Link>
-                </div>
-                <div className='botonesVerCarrito'>
                     {
                         goToCart
-                            ? <Link to='/cart' >Terminar compra</Link>
+                            ? <Link className="labelForm" to='/cart' >Terminar compra</Link>
                             : <ItemCount initial={1} stock={5} onAdd={onAdd} />
                     }
                 </div>

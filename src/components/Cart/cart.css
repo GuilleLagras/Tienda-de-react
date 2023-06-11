@@ -1,4 +1,37 @@
-.divContainerCarrito{
+
+.divCarrito{
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: .7rem .5rem 1rem -.1rem;
+
+}
+
+.carritoVacio{
+    background-color: aliceblue;
+    font-size: 50px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.botonComprar{
+    background-color: rgb(100, 100, 100);
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+    transition: 1s;
+}
+.botonComprar:hover{
+    opacity: 5;
+    transform: scale(1.1);
+    max-width: 100%;
+    cursor: pointer;
 }

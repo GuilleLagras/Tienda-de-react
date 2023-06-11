@@ -12,12 +12,11 @@ const menu = () => {
         <>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href='/' >Que es Airsoft</Navbar.Brand>
+                    <Navbar.Brand as={NavLink} to="/">Que es Airsoft</Navbar.Brand>
                     <Nav className="me-auto" id='navBar' >
                         <div className='divMenu' >
                             < Dropdown />
                             <NavLink className="nav-link" to='/galeria'>Galeria</NavLink>
-                            <NavLink className="nav-link" to='/contacto'>Contacto</NavLink>
                         </div>
                         <div>
                             <NavLink className="nav-link" to='/cart'><CartWidget /></NavLink>
